@@ -405,9 +405,25 @@ img {
 .company-icon {
   fill: #8e8f99;
 }
-.company-link:is(:hover, :focus) {
-  background-color: var(--accent-color);
+
+.company-link:hover,
+.company-link:focus {
+  border: 1px solid var(--accent-color);
 }
+
+.company-link:hover,
+.company-link:focus {
+  fill: var(--accent-color);
+}
+
+.company-icon:hover,
+.company-icon:focus {
+  fill: var(--accent-color);
+}
+/*
+.company-link:is(:hover, :focus) {
+  fill: var(--accent-color);
+}*/
 
 /*======================= FOOTER =======================*/
 .footer {
@@ -556,6 +572,10 @@ img {
   cursor: pointer;
 }
 
+.card-item:is(:hover, :focus) {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 .card-wrap {
   padding-top: 32px;
   padding-bottom: 32px;
