@@ -406,24 +406,13 @@ img {
   fill: #8e8f99;
 }
 
-.company-link:hover,
-.company-link:focus {
+.company-link:is(:hover, :focus) {
   border: 1px solid var(--accent-color);
 }
 
-.company-link:hover,
-.company-link:focus {
+.company-link:is(:hover, :focus) .company-icon {
   fill: var(--accent-color);
 }
-
-.company-icon:hover,
-.company-icon:focus {
-  fill: var(--accent-color);
-}
-/*
-.company-link:is(:hover, :focus) {
-  fill: var(--accent-color);
-}*/
 
 /*======================= FOOTER =======================*/
 .footer {
